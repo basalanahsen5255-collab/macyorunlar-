@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo_resmi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtKayitBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Saha Yorumları'na\nHoş Geldin!"
+        android:textAlignment="center"
+        android:textColor="#1A237E"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+    <EditText
+        android:id="@+id/editKayitAdSoyad"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Adınız Soyadınız"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtKayitBaslik" />
+
+    <EditText
+        android:id="@+id/editKayitEmail"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="E-posta Adresiniz"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editKayitAdSoyad" />
+
+    <EditText
+        android:id="@+id/editKayitSifre"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Şifreniz"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editKayitEmail" />
+
+    <Button
+        android:id="@+id/btnKayitOl"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#2E7D32"
+        android:text="Hemen Kayıt Ol"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editKayitSifre" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnKayitOl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zaten bir hesabın var mı? "
+            android:textColor="#424242"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtGirisYapGit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş Yap"
+            android:textColor="#1565C0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
